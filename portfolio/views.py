@@ -18,8 +18,8 @@ def show(request):
             subject=request.GET['subject'],
             text=request.GET['text']
         )
-        messages=str(request.GET['email']) +  " " +"size mail mesaj yazib"
-        send_mail(request.GET['subject'], messages, settings.EMAIL_HOST_USER , ['zaurqwerty@gmail.com'], fail_silently=False)
+        # messages=str(request.GET['email']) +  " " +"size mail mesaj yazib"
+        # send_mail(request.GET['subject'], messages, settings.EMAIL_HOST_USER , ['zaurqwerty@gmail.com'], fail_silently=False)
         obj.save
     
     context={
